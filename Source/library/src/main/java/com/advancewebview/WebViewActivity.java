@@ -122,6 +122,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 		webView.getSettings().setSupportZoom(true);
 		webView.getSettings().setBuiltInZoomControls(true);
 		webView.getSettings().setDisplayZoomControls(false);
+		webView.getSettings().setDomStorageEnabled(true);
 		webView.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NORMAL);
 		webView.getSettings().setUseWideViewPort(true);
 		webView.setWebViewClient(new WebViewClient() {
